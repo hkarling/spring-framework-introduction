@@ -3,6 +3,7 @@ package io.hkarling.hello.repository;
 import io.hkarling.hello.domain.Member;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.stereotype.Repository;
 
 public interface MemberRepository {
 

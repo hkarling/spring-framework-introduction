@@ -5,12 +5,13 @@ import io.hkarling.hello.repository.MemberRepository;
 import io.hkarling.hello.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.stereotype.Service;
 
 public class MemberService {
 
     private final MemberRepository memberRepository; //= new MemoryMemberRepository();
 
-    public MemberService(MemberRepository memberRepository) { // Dependency Injection : 외부에서 주입
+    public MemberService(MemberRepository memberRepository) { // Dependency Injection : 외부에서 주입, 생성자 주입
         this.memberRepository = memberRepository;
     }
 
